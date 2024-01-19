@@ -3,9 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Intro To Daisy</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 <body>
-    
+    <h1>I explored Tailwind</h1>
+    <h3>Now I want to see my Daisy Khala</h3>
+    <button class="btn">Click Me</button>
+    <button class="btn btn-primary">Click Me</button>
+    <button class="btn btn-secondary">Click Me</button>
+    <button class="btn btn-success">Click Me</button>
+    <button class="btn btn-warning">Warning</button>
+
+    <!-- accordian -->
+    <section class="m-4">
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" checked="checked" /> 
+            <div class="collapse-title text-xl font-medium">
+              Do you like Tailwind CSS?
+            </div>
+            <div class="collapse-content"> 
+              <p>Yes I do</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-medium">
+              What types of phone are not smart?
+            </div>
+            <div class="collapse-content"> 
+              <p>My grandma's phone</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-medium">
+              Where do you live?
+            </div>
+            <div class="collapse-content"> 
+              <p>In your Dreamland</p>
+            </div>
+          </div>
+    </section>
+    <section>
+            <div class="avatar">
+                <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 m-20">
+                  <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                </div>
+            </div>
+    </section>
+    <!-- shoes -->
+    <section class="flex flex-col md:flex-row m-6 gap-4">
+        <div class="card w-96 bg-base-100 shadow-xl">
+            <figure><img src="shoes.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card w-96 bg-base-100 shadow-xl image-full">
+            <figure><img src="lake.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section>
+        <!-- slider or carousel -->
+        <div class="carousel w-full">
+            <div id="item1" class="carousel-item w-full">
+              <img src="lake.jpg" class="w-full" />
+            </div> 
+            <div id="item2" class="carousel-item w-full">
+              <img src="lake.jpg" class="w-full" />
+            </div> 
+           
+          </div> 
+          <div class="flex justify-center w-full py-2 gap-2">
+            <a href="#item1" class="btn btn-xs">1</a> 
+            <a href="#item2" class="btn btn-xs">2</a> 
+          </div>
+    </section>
 </body>
 </html>
